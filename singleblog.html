@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Single Blog Page</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Onest', sans-serif;
+}
+
+/* Single Blog */
+.outer-blog-sec1 h1{
+    font-size: 42px;
+    line-height: 58px;
+    font-weight: 500;
+    color: black;
+}
+.outer-blog-sec1-col-1{
+    display: flex;
+    align-items: center;
+}
+.outer-blog-sec1-col-1 img{
+    border-radius: 50%;
+    width: 40px;
+}
+
+.outer-blog-sec1-col-1 span{
+    font-size: 14px;
+    color: #333;
+}
+
+.line {
+    background-color: rgba(0, 0, 0, .2);
+    width: 1px;
+    height: auto;
+}
+.outer-blog-sec1-col-2 span{
+    font-size: 14px;
+    color:#333;
+}
+
+.outer-blog-sec1-col-2{
+    justify-content: end;
+}
+.outer-blog-sec2 img{
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.outer-blog-sec3 p{
+   font-size: 16px;
+   color: #333333;
+}
+
+.outer-blog-sec3 h2{
+ font-size: 22px;
+ font-weight: 500;
+ line-height: 42px;
+}
+
+.outer-blog-sec3 ol li{
+    padding-bottom: 25px;
+
+}
+
+.outer-blog-sec3 img{
+    width: 100%;
+}
+
+.bg-div {
+    background:#f2f4ef;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    
+}
+
+.bg-div p{
+    font-size: 18px;
+    line-height: 31px;
+    color: black;
+    font-weight: 400;
+}
+
+.Empowerment-unleashed ul li{
+    padding-bottom: 25px;
+}
+
+.transforming img{
+    width: 100%;
+}
+
+.transforming h2{
+    font-size: 18px;
+    padding-top: 30px;
+
+}
+
+/*Similar Post */
+
+.SimilarPost h2{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+}
+
+.card-blog span{
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+/*blog */
+.blog-content{
+  border-color: #e5e5e5;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-bottom-left-radius:10px ;
+  border-bottom-right-radius:10px;
+}
+.blog-content button{
+  box-shadow: unset;
+  border: unset;
+  background: unset;
+  font-size: 16px;
+  font-weight: 400;
+}
+.blog-img img{
+  border-top-left-radius:10px ;
+  border-top-right-radius:10px;
+}
+
+
+/* Blog Image Hover Effect */
+.image-container {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.zoom-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.zoom-image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .outer-blog-sec1 h1{
+        margin-bottom: 12px;
+        font-size: 22px;
+        line-height: 150%;
+    }
+    .outer-blog-sec1 h1 br{
+       display: none;
+    }
+
+    .outer-blog-sec1-col-2 {
+  justify-content: center;
+}
+
+.outer-blog-sec1-col-1 {
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.outer-blog-sec2 img {
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.outer-blog-sec3 p {
+  font-size: 14px;
+  color: #333333;
+}
+
+.outer-blog-sec3 h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.outer-blog-sec3 ol li {
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.bg-div {
+  background: #f2f4ef;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.Empowerment-unleashed ul li {
+  font-size: 14px;
+}
+
+.transforming p {
+  padding-top: 10px;
+  margin-bottom: 0px
+}
+
+.outer-blog-sec1 h1 {
+  text-align: center;
+}
+      
+}
+</style>
+</head>
+
+<body>
+        
+ 
+    <!--blog Section -->
+    <div class="container-fluid px-md-5 px-3">
+        <div class="row outer-blog-sec1 pt-md-5 pt-4">
+            <h1>Beyond the blueprint crafting your unique <br> success structure</h1>
+            <div class="col-md-6  outer-blog-sec1-col-1">
+                <img src="images/single-blog/thumb-blog.jpg" alt="">
+                <span class="ps-2" >Albert Flores</span>
+            </div>
+            <div class="col-md-6  outer-blog-sec1-col-2 d-flex">
+                <div class="pe-3">
+                <img class="pe-2" src="images/single-blog/calendar-single-blog.svg" alt="">
+                <span>Mar 21, 2024</span>
+                </div>
+                <div class="line"></div>
+                <div class="ps-3">
+                    <img class="pe-2" src="images/single-blog/clock-single-blog.svg" alt="">
+                    <span>15 Minutes</span>
+                    </div>
+
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12  outer-blog-sec2">
+                <img src="images/single-blog/blog-main-img.jpg" alt="">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9 outer-blog-sec3">
+                <p class="pt-md-5 pt-md-4 pt-4">At Unitech, we believe in pushing the boundaries of what's possible in business. Our mission is to provide you with  cutting-edge solutions that seamlessly integrate into your workflow, fostering innovation, and driving your success. Imagine a world where every task is optimized, every challenge is met with precision, and every opportunity is seized.</p>
+                <h2 class="pb-3 pt-4">Igniting ideas, expanding networks, and shaping success</h2>
+                <ol>
+                    <li>Nibh libero condimentum duis turpis pretium molestie netus turpis</li>
+                    <li>Turpis lacus sed sagittis mollis sitquam ipsum</li>
+                    <li>Feugiat maurisac ultricies cursus sollicitudin acmauris</li>
+                    <li>Arcu rutrum luctus libero elementum quis libero enim utgravida quis</li>
+                    <li>Molestie sem cursus pulvinar euismod pulvinar nisi at nisi consequat integer neque arcu.</li>
+                    <li>Consequat vulputate pellentesque cursus venenatis egestas.</li>
+                </ol>
+                <img class="" src="images/single-blog/blog-img-2.jpeg" alt="">
+                <div class="bg-div">
+                    <p class="text-center">Innovation is not just about technology; it's a mindset, a way of approaching challenges with curiosity and creativity. At Unitech, we believe in fostering this innovative spirit, providing a platform where new ideas thrive, and networks flourish.</p>
+                </div>
+                <p class="pt-3">Odio augue morbi elementum lectus metus nec phasellus. Donec non auctor tellus nibh elementum nunc elementum. Aenean diam sed tincidunt urna. Vitae magna nam vitae mauris. Pellentesque lacus eget mattis gravida elementum nisi vestibulum. Morbi lectus massa in cras cursus id scelerisque tincidunt</p>
+                <div class="Empowerment-unleashed">
+                <h2 class="pb-3 pt-4">Empowerment unleashed achieve your goals and unlock opportunities with unitech</h2>
+                <p>Sollicitudin feugiat nisl, lorem interdum pellentesque. Massa, scelerisque in placerat rutrum hac scelerisque habitasse. Amet ultricies massa nec, ornare faucibus facilisi quisque leo iaculis. Velit consequat in aliquet ullamcorper tristique pulvinar adipiscing sem. Imperdiet augue cras pretium at lectus congue leo feugiat. Eget sit nunc nullam fringilla ut sem eget quis.</p>
+                <ul class="pt-2">
+                    <li>Sit vulputate aliquam cras aliquam etnibh congue consequat pellentesque</li>
+                    <li>Vestibulum massa aliquet odio mauris duis amet nsed dapibus porta est amet</li>
+                    <li>Urna augue arcu duis eget proin sed morbi purus sit nunc sodales aliquam</li>
+                    <li>Netus nunc risus interdum feugiat et nunc pellentesque mus.</li>
+                    <li>Egestas vitae orci mauris a donec convallis volutpat ac.</li>
+                </ul>
+                </div>
+                <div class="transforming">
+                    <img src="images/single-blog/blog-img-3.jpeg" alt="">
+                    <h2>Transforming business horizons: explore unitech's innovations in saas</h2>
+                    <p>Ac amet turpis ornare rhoncus. Sed sed ornare elit ut commodo feugiat commodo faucibus purus. Vitae sapien purus id eget neque nulla posuere pellentesque turpis. Aliquam hac amet rhoncus velit vel vitae. Sed lacinia neque amet quis lectus. Pharetra ut volutpat mauris et turpis volutpat eu nisl. A lectus nisi posuere egestas maecenas nulla.</p>
+                    <h2>Your trusted ally in unlocking opportunities for business growth</h2>
+                    <p>Lobortis penatibus pharetra penatibus nunc morbi ut pulvinar odio nunc. Blandit non a nec leo quis posuere auctor. Amet nunc cras ut at. Gravida sit tempor dictumst odio eu nec blandit non.</p>
+                </div>
+                
+            </div>
+        </div>
+
+
+        
+    </div>
+    <!--blog Section end -->
+
+     <!--Similar post -->
+     <div class="container-fluid px-md-5 px-3 bg-white py-md-5 pt-5 pb-3">
+        <div class="row pt-2 pb-5">
+        <div class="pb-3 SimilarPost">
+          <p class="mb-0">Related</p>
+          <h2>Similar Posts</h2>
+        </div>
+        <div class="col-md-4 blog-img">
+            <div class="image-container">
+                <img src="/images/blog-1.jpg" alt="" class="img-fluid zoom-image">
+            </div>
+          
+          <div class="blog-content p-3">
+            <div class="pt-2 card-blog">
+                <img src="/images/single-blog/calendar-single-blog.svg" alt="" class="img-fluid"></i> <span>Mar21,2024</span>
+            </div>
+            <p class="pt-3">Beyond the blueprint crafting your unique success Structure</p>
+             <button class="pb-2">Read More</button>
+          </div>
+        </div>
+        <div class="col-md-4  pt-md-0 pt-4 blog-img">
+        <div class="image-container">
+          <img src="/images/blog-2.jpg" alt="" class="img-fluid zoom-image">
+          </div>
+          <div class="blog-content p-3">
+            <div class="pt-2 card-blog">
+                <img src="/images/single-blog/calendar-single-blog.svg" alt="" class="img-fluid"></i> <span>June21,2024</span>
+            </div>
+            <p class="pt-3">Beyond the blueprint crafting your unique success Structure</p>
+             <button class="pb-2">Read More</button>
+          </div>
+        </div>
+        <div class="col-md-4  pt-md-0 pt-4 blog-img">
+            <div class="image-container">
+          <img src="/images/blog-3.jpg" alt="" class="img-fluid zoom-image">
+          </div>
+          <div class="blog-content p-3">
+            <div class="pt-2 card-blog">
+                <img src="/images/single-blog/calendar-single-blog.svg" alt="" class="img-fluid"> <span>October23,2024</span>
+            </div>
+            <p class="pt-3">Beyond the blueprint crafting your unique success Structure</p>
+             <button class="pb-2">Read More</button>
+          </div>
+        </div>
+      </div>
+      </div>
+     <!--Similar post end-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
